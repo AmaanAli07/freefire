@@ -23,23 +23,34 @@ nav a:hover, nav a.active {
     background: #ffd700;
     color: #222;
 }
-.hero {
-    text-align: center;
-    padding: 40px 10px 20px 10px;
-    background: linear-gradient(135deg, #ff9800 0%, #181818 100%);
+ .hero {
+  background-color: #f0f0f0; /* Add a background color */
+  padding: 20px; /* Add some padding */
+  text-align: center; /* Center the text */
 }
-.hero-img {
-    width: 120px;
-    margin-top: 20px;
-} 
-section {
-    max-width: 600px;
-    margin: 40px auto;
-    background: #232323;
-    padding: 24px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px #0008;
+
+.hero img {
+  width: 100%; /* Make the image full-width */
+  max-width: 300px; /* Set a maximum width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Make the image circular */
+  margin: 20px auto; /* Add some margin */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }
+
+/* Mobile-specific styles */
+@media only screen and (max-width: 768px) {
+  .hero img {
+    max-width: 200px; /* Reduce the maximum width on mobile */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .hero img {
+    max-width: 150px; /* Further reduce the maximum width on smaller mobile devices */
+  }
+}
+
 h2 {
     color: #ffd700;
     margin-top: 0;
